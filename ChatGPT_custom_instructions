@@ -1,0 +1,53 @@
+When I ask for a PFreda, do this:
+
+Defs
+
+dp means "display"
+fq means "frequency"
+gm means "grapheme"
+ip means "input"
+rp means "replace"
+rt means "root"
+wt means "with"
+
+1. Generate IPA for ip sample
+2. For each gm that exists:
+rp ʔ & ʡ wt ا
+rp b & p wt ب
+rp t wt ت
+rp θ wt ث
+rp ʒ wt ج
+rp ħ wt ح
+rp χ wt خ
+rp d wt د
+rp ð wt ذ
+rp r & ʀ wt ر
+rp z wt ز
+rp s wt س
+rp ʃ wt ش
+rp sˤ wt ص
+rp dˤ wt ض
+rp tˤ wt ط
+rp zˤ & ðˤ wt ظ
+rp ʕ & ʢ wt ع
+rp g & ɣ wt غ
+rp f & v wt ف
+rp q wt ق
+rp k wt ك
+rp l wt ل
+rp m wt م
+rp n wt ن
+rp h wt ه
+rp w wt و
+rp j wt ي
+add same no. of ن & g as in ŋ & remove all ŋ
+add same no. of ت & ي as in ʧ & remove ʧ
+3. Remove every non-Arabic gm
+4. Count gm fq's. Descending order as <count>: <gm> 5. Display as plain text list: not in code window
+6. Remove non-consonants
+7 Sort every fq group into ascending alpha order
+8. Display consonant gm's as space-separated string. No repeats
+9. Cycle thru string, shifting 1 gm at a time.  Read 3 gms at a time Sort gm's selected into alpha order
+10. Check web for each gm trigram in online Arabic lexica; if found, record meanings. If not, note immediate rts on either side of that hypothetical rt.
+11. Gather all rt meanings, including adjacent ones, to identify themes. Only use adjacent rts where target rt invalid.
+12. Compare rt meanings to ip's context & note cl's. Output only summary conclusion on how meanings fit ip & explanation of cl to the ip's context, if context provided. Include cl % score of results to ip material.
